@@ -7,7 +7,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "small_storage": {
                 "x": 4,
@@ -15,7 +15,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"storage.png"
             },
             "medium_storage": {
                 "x": 8,
@@ -23,7 +23,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"storage.png"
             },
             "large_storage": {
                 "x": 8,
@@ -31,7 +31,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"storage.png"
             },
             "small_battery": {
                 "x": 3,
@@ -39,7 +39,7 @@ let game_data = JSON.parse(`{
                 "access": "all",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"battery.png"
             },
             "medium_battery": {
                 "x": 5,
@@ -47,7 +47,7 @@ let game_data = JSON.parse(`{
                 "access": "all",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"battery.png"
             },
             "large_battery": {
                 "x": 7,
@@ -55,7 +55,7 @@ let game_data = JSON.parse(`{
                 "access": "all",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"battery.png"
             },
             "firestation": {
                 "x": 6,
@@ -63,7 +63,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"firestation.png"
             },
             "drone_bay": {
                 "x": 8,
@@ -71,7 +71,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             }
         },
         "space": {
@@ -81,7 +81,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 2,
                 "wallmounted": true,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "eva_airlock": {
                 "x": 12,
@@ -89,7 +89,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 2,
                 "wallmounted": true,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "probe_launcher": {
                 "x": 12,
@@ -97,7 +97,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 2,
                 "wallmounted": true,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "colonization_training_center": {
                 "x": 6,
@@ -105,7 +105,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             }
         },
         "factory": {
@@ -115,7 +115,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "steel_mill": {
                 "x": 9,
@@ -123,7 +123,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "electronics_factory": {
                 "x": 6,
@@ -131,7 +131,7 @@ let game_data = JSON.parse(`{
                 "access": "y",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "polymer_refinery": {
                 "x": 6,
@@ -139,7 +139,7 @@ let game_data = JSON.parse(`{
                 "access": "y",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "fusion_station": {
                 "x": 6,
@@ -147,7 +147,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "water_treatment_center": {
                 "x": 5,
@@ -155,7 +155,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "waste_treatment_center": {
                 "x": 9,
@@ -163,7 +163,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "nuclear_power_plant": {
                 "x": 9,
@@ -171,7 +171,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             }
         },
         "population":{
@@ -181,7 +181,7 @@ let game_data = JSON.parse(`{
                 "access": "all",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "optimized_quarter": {
                 "x": 3,
@@ -189,7 +189,7 @@ let game_data = JSON.parse(`{
                 "access": "all",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "domotic_quarter": {
                 "x": 3,
@@ -197,7 +197,7 @@ let game_data = JSON.parse(`{
                 "access": "all",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "cell_housing": {
                 "x": 8,
@@ -205,7 +205,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": true,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "cryonics_center": {
                 "x": 5,
@@ -213,7 +213,7 @@ let game_data = JSON.parse(`{
                 "access": "y",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "infirmary": {
                 "x": 3,
@@ -221,7 +221,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "health_center": {
                 "x": 8,
@@ -229,7 +229,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             }
         },
         "food":{
@@ -239,7 +239,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "insect_farm":{
                 "x": 4,
@@ -247,7 +247,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "crop_farm":{
                 "x": 3,
@@ -255,7 +255,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "crop_farm_tile":{
                 "x": 4,
@@ -263,7 +263,7 @@ let game_data = JSON.parse(`{
                 "access": "all",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "algae_farm":{
                 "x": 4,
@@ -271,7 +271,7 @@ let game_data = JSON.parse(`{
                 "access": "y",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "algae_farm_tile":{
                 "x": 4,
@@ -279,7 +279,7 @@ let game_data = JSON.parse(`{
                 "access": "all",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "mushroom_wall":{
                 "x": 8,
@@ -287,7 +287,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": true,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             }
         },
         "stability":{
@@ -297,7 +297,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "alternative_life_center":{
                 "x": 5,
@@ -305,7 +305,7 @@ let game_data = JSON.parse(`{
                 "access": "y",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "memorials":{
                 "x": 7,
@@ -313,7 +313,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "legislative_strengthening_center":{
                 "x": 6,
@@ -321,7 +321,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "hull_temple":{
                 "x": 4,
@@ -329,7 +329,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": true,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "observatory":{
                 "x": 12,
@@ -337,7 +337,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": true,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             },
             "exo_fighting_dome":{
                 "x": 14,
@@ -345,7 +345,7 @@ let game_data = JSON.parse(`{
                 "access": "x",
                 "padding": 0,
                 "wallmounted": false,
-                "asset":"./ws.png"
+                "asset":"workshop.png"
             }
         }
     }

@@ -1,5 +1,5 @@
-svg{
-    border:1px solid black;
+svg {
+    border: 1px solid black;
     object-fit: fill;
     aspect-ratio: 56/30;
     width: 1120px;
@@ -11,12 +11,17 @@ svg{
     max-width: 1120px;
     max-height: 600px;
 }
-image{
-    outline:1px solid black;
+
+image {
+    outline: 1px solid black;
     transform-box: fill-box;
-    
 }
+
 .hooverImage {
     pointer-events: none;
     cursor: default;
- }
+}
+
+text {
+    pointer-events: none;
+}

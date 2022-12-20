@@ -15,6 +15,10 @@ let multiplier = { // pixel per tile
     x: gridDimension.x / gridSize.x,
     y: gridDimension.y / gridSize.y
 };
+
+//assets folder
+let assetSource = "./resources/";
+
 //svg include
 let xmlns = "http://www.w3.org/2000/svg";
 
@@ -47,12 +51,21 @@ drawFeatures();
 
 document.onkeydown = function buttonPressed(e) {
     if (e.key == "r") {
-        isRotate = !isRotate;
-        let object = document.getElementById('b-' + lastDrawmID);
-        if (isRotate) {
-            object.setAttributeNS(null, 'transform', 'rotate(90),scale(1, -1)');
-        } else {
-            object.setAttributeNS(null, 'transform', 'rotate(0),scale(1, 1)');
+        if (lastDrawmID != null) {
+            let building = game_data["buildings"][currentGroupName][currentBuildingName];
+
+            if (building.wallmounted) {
+                return;
+            }   
+
+            isRotate = !isRotate;
+            let object = document.getElementById('b-' + lastDrawmID);
+
+            if (isRotate) {
+                object.setAttributeNS(null, 'transform', 'rotate(90),scale(1, -1)');
+            } else {
+                object.setAttributeNS(null, 'transform', 'rotate(0),scale(1, 1)');
+            }
         }
     }
 }
@@ -73,7 +86,7 @@ document.getElementById("draw").onmousemove = function gridSelector(e) {
                 }
             } else {
                 if (isStillInGrid(building, coord)) {
-                    drawImage(coord.x * multiplier.x, coord.y * multiplier.y, building.x * multiplier.x, building.y * multiplier.y, building.asset, buildingIDCounter);
+                    drawImage(coord.x * multiplier.x, coord.y * multiplier.y, building.x * multiplier.x, building.y * multiplier.y, assetSource + building.asset, buildingIDCounter);
                     lastDrawmID = buildingIDCounter;
                 }
             }
@@ -123,7 +136,13 @@ function placeBuilding(e) {
         let building = game_data["buildings"][currentGroupName][currentBuildingName];
         let coord = getCoord(e);
         if (isStillInGrid(building, coord)) {
-            if (checkIfAreaClear(coord, building.x, building.y)) {
+            let isClear = false;
+            if (isRotate) {
+                isClear = checkIfAreaClear(coord, building.y, building.x);
+            } else {
+                isClear = checkIfAreaClear(coord, building.x, building.y);
+            }
+            if (isClear) {
                 addBuilding(coord, building, buildingIDCounter);
                 lastPlacedCoord = coord;
                 buildingIDCounter++;
@@ -224,7 +243,7 @@ function drawRect(x, y, width, height, style) {
     draw.appendChild(rect);
 }
 
-function drawImage(x, y, width, height, source, id) {
+function drawImage(x, y, width, height, source=assetSource+"placeholder.png", id) {
     let draw = document.getElementById("draw");
     let img = document.createElementNS(xmlns, "image");
     img.setAttributeNS(null, "id", "b-" + id);
@@ -248,16 +267,10 @@ function startPlacingBuilding(buildingID) {
 }
 
 function buildingSelectorClick(group_id, id) {
-    if (mode == 0) {
-        currentGroupName = group_id;
-        currentBuildingName = id;
-        mode = 1;
-    } else {
-        currentGroupName = null;
-        currentBuildingName = null;
-        mode = 0;
-    }
-
+    currentGroupName = group_id;
+    currentBuildingName = id;
+    mode = 1;
+    isRotate = false;
 }
 
 function makeArray(h, w, val) {
@@ -340,11 +353,11 @@ function checkIfAreaClear(coord, x, y) {
     for (let i = 0; i < x; i++) {
         for (let j = 0; j < y; j++) {
             if (building.wallmounted) {
-                if (mapGrid[coord.x + i][coord.y + j] != null && mapGrid[coord.x + i][coord.y + j] != -1) {
+                if (mapGrid[coord.x + i][coord.y + j] != null) {
                     return false;
                 }
             } else {
-                if (mapGrid[coord.x + i][coord.y + j] != null) {
+                if (mapGrid[coord.x + i][coord.y + j] != null && mapGrid[coord.x + i][coord.y + j] != -1) {
                     return false;
                 }
             }
