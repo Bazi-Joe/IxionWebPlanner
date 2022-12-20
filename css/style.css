@@ -1,0 +1,22 @@
+svg{
+    border:1px solid black;
+    object-fit: fill;
+    aspect-ratio: 56/30;
+    width: 1120px;
+    height: 600px;
+    /* width: auto; */
+    /* height: auto; */
+    min-width: 560px;
+    min-height: 300px;
+    max-width: 1120px;
+    max-height: 600px;
+}
+image{
+    outline:1px solid black;
+    transform-box: fill-box;
+    
+}
+.hooverImage {
+    pointer-events: none;
+    cursor: default;
+ }
