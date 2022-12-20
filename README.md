@@ -1,11 +1,17 @@
 # IxionWebPlanner
 Layout Planner for videogame Ixion using SVG+HTML+JS+CSS
 
+# Key controll
+
+Controll: holt it to place multiple
+
+Shift: hold it with controll to only allow to place in line
+
 # Current usage:
 1. Download as Zip
 2. Extract
 3. Open in browser
-3.1 Internet connection optional (used for bootstrap)
+3.1. Internet connection optional (used for bootstrap)
 
 # Discalimer:
 This project may or may not be developed further. This is a really amateur work with most likely many bugs.
